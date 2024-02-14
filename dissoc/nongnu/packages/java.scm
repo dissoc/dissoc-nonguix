@@ -1,3 +1,5 @@
+;;; Copyright © 2024 Justin Bishop <mail@dissoc.me>
+
 (define-module (dissoc nongnu packages databases)
   #:use-module (gnu packages compression)
   #:use-module (gnu packages java)

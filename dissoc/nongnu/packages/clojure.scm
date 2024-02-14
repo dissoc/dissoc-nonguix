@@ -1,3 +1,5 @@
+;;; Copyright © 2024 Justin Bishop <mail@dissoc.me>
+
 (define-module (dissoc nongnu packages clojure)
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (gnu packages java)
