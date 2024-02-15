@@ -4,6 +4,7 @@
   (channel
    (name dissoc-guix)
    (url "https://github.com/dissoc/dissoc-guix.git")
+   (branch "main")
    (introduction
     (channel-introduction
      (version 0)
