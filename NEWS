@@ -1,0 +1,5 @@
+(channel-news
+  (version 0)
+  (entry (commit "0ff92800091e5d428c1cde10f75894d3138152c5")
+         (title (en "Welcome to the channel!"))
+         (body (en "The channel has just been created!"))))

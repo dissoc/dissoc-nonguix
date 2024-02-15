@@ -1,5 +1,6 @@
 (channel
  (version 0)
+ (news-file "./NEWS")
  (dependencies
   (channel
    (name dissoc-guix)
