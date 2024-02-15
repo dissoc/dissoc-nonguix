@@ -2,7 +2,7 @@
 #+SUBTITLE:  packages and services for guix that have unfriendly licenses or build methods
 #+AUTHOR:    Justin Bishop
 #+DESCRIPTION: contains unfriendly packages and services to be used as a channel with guix
-#+KEYWORDS:  org-mode, syntax, quick reference, cheat sheet, recommended practices, latex, beamer, html
+#+KEYWORDS:  guix, packages, services, non-free
 #+LANGUAGE:  en
 
 * Summary
@@ -13,8 +13,15 @@ Add the channel to the file: ~/.config/guix/channels.scm
 If the file does not exist it may need to be created.
 #+begin_src scheme :eval no
 (append %default-channels
-        (list (channel
-               (name 'dissoc-nonguix
-               (url "https://github.com/dissoc/dissoc-nonguix.git"))
-              ...))
+        (list
+         (channel
+          (name 'dissoc-nonguix)
+          (url "https://github.com/dissoc/dissoc-nonguix.git")
+          (branch "main")
+          (introduction
+           (make-channel-introduction
+            "084a499cab2a827e9127c33e9ec24f1d14180c93"
+            (openpgp-fingerprint
+             "95D3 7A96 EC54 79CE 6082  5831 81FF 5EC7 66ED 8C39"))))
+         ...))
 #+end_src
