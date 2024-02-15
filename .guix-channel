@@ -12,7 +12,7 @@
      (commit "eeb7e6748f7db8dced413a513da1ea48ffcf7dd7")
      (signer "95D3 7A96 EC54 79CE 6082  5831 81FF 5EC7 66ED 8C39"))))
   (channel
-   (name 'nonguix)
+   (name nonguix)
    (url "https://gitlab.com/nonguix/nonguix")
    (introduction
     (channel-introduction
