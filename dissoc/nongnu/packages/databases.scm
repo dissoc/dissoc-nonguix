@@ -15,7 +15,11 @@
    (source
     (origin
      (method url-fetch)
-     (patches (search-patches "elasticsearch.patch"))
+     (patches
+      (list (search-path
+             (map (cut string-append <> "/nongnu/packages/patches")
+                  %load-path)
+             "elasticsearch.patch")))
      (uri  (string-append "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-"
                           version
                           "-linux-x86_64.tar.gz"))
