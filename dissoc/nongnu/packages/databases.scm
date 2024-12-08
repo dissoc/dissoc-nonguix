@@ -18,7 +18,7 @@
      (method url-fetch)
      (patches
       (list (search-path
-             (map (cut string-append <> "/nongnu/packages/patches")
+             (map (cut string-append <> "/dissoc/nongnu/packages/patches")
                   %load-path)
              "elasticsearch.patch")))
      (uri  (string-append "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-"
@@ -54,3 +54,5 @@
    (synopsis "Elasticsearch is a distributed, RESTful search and analytics engine")
    (description "Elasticsearch is a distributed, RESTful search and analytics engine capablee of addressing a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.")
    (license license:gpl3+)))
+
+elasticsearch
