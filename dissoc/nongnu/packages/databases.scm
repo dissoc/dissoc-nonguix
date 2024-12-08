@@ -6,7 +6,8 @@
   #:use-module (guix download)
   #:use-module (gnu packages)
   #:use-module (guix packages)
-  #:use-module (nonguix build-system binary))
+  #:use-module (nonguix build-system binary)
+  #:use-module (srfi srfi-26))
 
 (define-public elasticsearch
   (package
