@@ -1,4 +1,4 @@
-(define-module (dissoc nongnu services elasticsearch)
+(define-module (dissoc nongnu services databases)
   #:use-module (dissoc nongnu packages databases)
   #:use-module (gnu packages admin)
   #:use-module (gnu packages databases)
